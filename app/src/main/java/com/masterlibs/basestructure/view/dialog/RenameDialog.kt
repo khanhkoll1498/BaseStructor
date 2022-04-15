@@ -23,7 +23,6 @@ class RenameDialog(override val layoutId: Int = R.layout.dialog_rename) : BaseAc
         }
     }
 
-
     override fun onDestroy() {
         super.onDestroy()
         callback = null

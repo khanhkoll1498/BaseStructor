@@ -123,9 +123,17 @@ dependencies {
     //eventbus
     implementation 'org.greenrobot:eventbus:3.2.0'
 
-    implementation 'com.github.datcorona:CommonLibs:1.0.6'
+    implementation 'com.github.datcorona:CommonLibs:1.0.7'
 
     implementation 'androidx.work:work-runtime:2.7.1'
     implementation 'androidx.work:work-runtime-ktx:2.7.1'
+
+
+    def room_version = "2.2.6"
+
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+    implementation "androidx.multidex:multidex:2.0.1"
+
 
 }

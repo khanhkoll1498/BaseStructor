@@ -1,8 +1,21 @@
 package com.masterlibs.basestructure
 
 import com.common.control.MyApplication
+import com.masterlibs.basestructure.db.RoomDatabase
 
 class App : MyApplication() {
+    companion object {
+        var instance: App? = null
+        var database: RoomDatabase? = null
+    }
+
+    override fun onCreate() {
+        super.onCreate()
+        instance = this
+        database = RoomDatabase.getDatabase(instance)
+    }
+
+
     override fun isPurchased(): Boolean {
         return BuildConfig.PURCHASED
     }
