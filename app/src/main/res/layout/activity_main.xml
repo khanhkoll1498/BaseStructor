@@ -4,15 +4,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@color/color_bg_home"
+    tools:context="com.masterlibs.basestructure.view.activity.HomeActivity">
 
-    <TextView
+    <FrameLayout
+        android:id="@+id/fr_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <include
+        android:id="@+id/ct_top"
+        layout="@layout/app_bars_top_home" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rc_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ct_top"
+        tools:listitem="@layout/item_image" />
 
+    <Button
+        android:id="@+id/bt_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:background="@drawable/ic_add"
+        app:layout_constraintBottom_toTopOf="@id/ll_ads"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_ads"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <include layout="@layout/load_fb_banner" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

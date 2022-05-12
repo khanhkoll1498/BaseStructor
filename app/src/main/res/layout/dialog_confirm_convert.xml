@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/round_corner_16dp">
+
+    <TextView
+        android:id="@+id/tv_convert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/txt_convert_to_pdf"
+        android:textColor="@color/color_font_poppins"
+        android:textSize="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_file_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:text="@string/txt_file_name"
+        android:textColor="#94979d"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_convert" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_filename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_24sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_file_name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_name"
+            android:text="Image to PDF_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_delete"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/_14sdp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:drawableRight="@drawable/ic_done"
+        android:paddingEnd="@dimen/_20sdp"
+        android:text="@string/txt_password"
+        android:textColor="#94979d"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/til_filename" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_24sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_eye"
+            android:fontFamily="@font/poppins_medium"
+            android:inputType="textPassword"
+            android:textSize="@dimen/_14sdp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/til_password">
+
+        <Button
+            android:id="@+id/bt_preview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_bt_preview" />
+
+        <Button
+            android:id="@+id/bt_convert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_bt_convert" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

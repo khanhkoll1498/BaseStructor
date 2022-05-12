@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg_home">
+
+    <ImageView
+        android:id="@+id/iv_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_56sdp"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:background="@drawable/ic_back"
+        android:backgroundTint="@color/color_icon"
+        app:layout_constraintBottom_toBottomOf="@id/iv_top_bar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_top_bar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/txt_settings"
+        android:textColor="@color/color_font_poppins"
+        android:textSize="@dimen/_16sdp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_top_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_top_bar" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:background="@drawable/ic_rate"
+        app:layout_constraintBottom_toBottomOf="@id/iv_top_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_top_bar" />
+
+
+    <Button
+        android:id="@+id/bt_share_app"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_56sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:background="@drawable/round_item_8dp"
+        android:drawableStart="@drawable/ic_share"
+        android:drawablePadding="@dimen/_12sdp"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center_vertical"
+        android:padding="@dimen/_17sdp"
+        android:text="@string/txt_share_app"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintTop_toBottomOf="@id/iv_top_bar" />
+
+    <Button
+        android:id="@+id/bt_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_56sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:background="@drawable/round_item_8dp"
+        android:drawableStart="@drawable/ic_feedback"
+        android:drawablePadding="@dimen/_12sdp"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center_vertical"
+        android:padding="@dimen/_17sdp"
+        android:text="@string/txt_feedback"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintTop_toBottomOf="@id/bt_share_app" />
+
+    <Button
+        android:id="@+id/bt_privacy_policy"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_56sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:background="@drawable/round_item_8dp"
+        android:drawableStart="@drawable/ic_privacy"
+        android:drawablePadding="@dimen/_12sdp"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center_vertical"
+        android:padding="@dimen/_17sdp"
+        android:text="@string/txt_privacy_policy"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintTop_toBottomOf="@id/bt_feedback" />
+
+    <LinearLayout
+        android:id="@+id/ll_ads"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <include layout="@layout/load_fb_banner" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

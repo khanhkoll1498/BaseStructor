@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.3169230769230769" />
+        <entry key="../../.gradle/caches/transforms-3/3e4fcdaa3e4caae900a09ebd844145c0/transformed/jetified-CommonLibs-1.0.7/res/layout/load_fb_banner.xml" value="0.2543822146216332" />
         <entry key="..\:/ATruong/BaseStructor/app/src/main/res/drawable/bg_dialog.xml" value="0.2518518518518518" />
         <entry key="..\:/ATruong/BaseStructor/app/src/main/res/drawable/bg_search.xml" value="0.2518518518518518" />
         <entry key="..\:/ATruong/BaseStructor/app/src/main/res/layout/activity_main.xml" value="0.25" />
@@ -10,6 +12,57 @@
         <entry key="..\:/ATruong/BaseStructor/app/src/main/res/layout/dialog_rename.xml" value="0.25" />
         <entry key="..\:/ATruong/BaseStructor/app/src/main/res/layout/fragment_home.xml" value="0.25" />
         <entry key="..\:/ATruong/BaseStructor/app/src/main/res/layout/item_file.xml" value="0.25" />
+        <entry key="app/src/main/res/drawable/bg_dialog.xml" value="0.162" />
+        <entry key="app/src/main/res/drawable/bg_search.xml" value="0.162" />
+        <entry key="app/src/main/res/drawable/ic_arrow_right.xml" value="0.1775" />
+        <entry key="app/src/main/res/drawable/ic_camera.xml" value="0.19" />
+        <entry key="app/src/main/res/drawable/ic_detail.xml" value="0.19" />
+        <entry key="app/src/main/res/drawable/ic_e_commerce_02.xml" value="0.148" />
+        <entry key="app/src/main/res/drawable/ic_eye.xml" value="0.1775" />
+        <entry key="app/src/main/res/drawable/ic_file_mgr.xml" value="0.1775" />
+        <entry key="app/src/main/res/drawable/ic_image.xml" value="0.162" />
+        <entry key="app/src/main/res/drawable/ic_search.xml" value="0.162" />
+        <entry key="app/src/main/res/drawable/ic_share.xml" value="0.162" />
+        <entry key="app/src/main/res/drawable/ic_share_app.xml" value="0.162" />
+        <entry key="app/src/main/res/drawable/round_corner_10dp.xml" value="0.162" />
+        <entry key="app/src/main/res/drawable/round_corner_16dp.xml" value="0.1775" />
+        <entry key="app/src/main/res/drawable/round_corner_4dp.xml" value="0.162" />
+        <entry key="app/src/main/res/drawable/round_corner_50dp.xml" value="0.167" />
+        <entry key="app/src/main/res/drawable/round_item_4dp.xml" value="0.162" />
+        <entry key="app/src/main/res/drawable/round_item_8dp.xml" value="0.162" />
+        <entry key="app/src/main/res/font/poppins.xml" value="0.2791791363830697" />
+        <entry key="app/src/main/res/font/poppins_regular.xml" value="0.2638243984803715" />
+        <entry key="app/src/main/res/font/poppins_semibold.xml" value="0.2756437315322921" />
+        <entry key="app/src/main/res/layout/act_add_image.xml" value="0.2543822146216332" />
+        <entry key="app/src/main/res/layout/act_common.xml" value="0.2424112868747328" />
+        <entry key="app/src/main/res/layout/act_convert.xml" value="0.2543822146216332" />
+        <entry key="app/src/main/res/layout/act_home_no_file.xml" value="0.2543822146216332" />
+        <entry key="app/src/main/res/layout/act_splash.xml" value="0.2543822146216332" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25925925925925924" />
+        <entry key="app/src/main/res/layout/activity_view_pdf.xml" value="0.2543822146216332" />
+        <entry key="app/src/main/res/layout/app_bars_top_home.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/button_camera.xml" value="0.2424112868747328" />
+        <entry key="app/src/main/res/layout/ct_pdf_view.xml" value="0.2543822146216332" />
+        <entry key="app/src/main/res/layout/dialog_add_images.xml" value="0.2424112868747328" />
+        <entry key="app/src/main/res/layout/dialog_albums.xml" value="0.2424112868747328" />
+        <entry key="app/src/main/res/layout/dialog_confirm.xml" value="0.2535271483539974" />
+        <entry key="app/src/main/res/layout/dialog_delete.xml" value="0.2424112868747328" />
+        <entry key="app/src/main/res/layout/dialog_rename.xml" value="0.2424112868747328" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.2424112868747328" />
+        <entry key="app/src/main/res/layout/fragment_view_pdf.xml" value="0.2419837537409149" />
+        <entry key="app/src/main/res/layout/frg_add_image.xml" value="0.2543822146216332" />
+        <entry key="app/src/main/res/layout/frg_camera.xml" value="0.2424112868747328" />
+        <entry key="app/src/main/res/layout/frg_image_selected.xml" value="0.2543822146216332" />
+        <entry key="app/src/main/res/layout/frg_preview.xml" value="0.2535271483539974" />
+        <entry key="app/src/main/res/layout/frg_search_no_file.xml" value="0.2424112868747328" />
+        <entry key="app/src/main/res/layout/frg_settings.xml" value="0.2424112868747328" />
+        <entry key="app/src/main/res/layout/item_file.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/item_file_pdf.xml" value="0.2500889439736643" />
+        <entry key="app/src/main/res/layout/item_folder_image.xml" value="0.2424112868747328" />
+        <entry key="app/src/main/res/layout/item_image.xml" value="0.2424112868747328" />
+        <entry key="app/src/main/res/layout/item_image_selected.xml" value="0.6941908694067895" />
+        <entry key="app/src/main/res/layout/item_preview_pdf.xml" value="0.2543822146216332" />
+        <entry key="app/src/main/res/layout/pop_edit.xml" value="0.2424112868747328" />
       </map>
     </option>
   </component>

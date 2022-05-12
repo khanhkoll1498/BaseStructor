@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="@dimen/_12sdp">
+
+    <TextView
+        android:id="@+id/tv_files"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/txt_files"
+        android:textColor="@color/color_font_poppins"
+        android:textSize="@dimen/_20sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_setting"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_sort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_24sdp"
+        android:background="@drawable/ic_sort"
+        app:layout_constraintRight_toLeftOf="@id/iv_setting"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_selectall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_24sdp"
+        android:background="@drawable/ic_selectall"
+        app:layout_constraintRight_toLeftOf="@id/iv_sort"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_find_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_36sdp"
+        android:background="@drawable/bg_search_home"
+        android:drawablePadding="@dimen/_8sdp"
+        android:hint="@string/txt_find_document"
+        android:paddingStart="@dimen/_32sdp"
+        app:layout_constraintTop_toBottomOf="@id/tv_files" />
+
+    <ImageView
+        android:id="@+id/iv_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:background="@drawable/ic_search"
+        app:layout_constraintBottom_toBottomOf="@id/edt_find_text"
+        app:layout_constraintStart_toStartOf="@id/edt_find_text"
+        app:layout_constraintTop_toTopOf="@id/edt_find_text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

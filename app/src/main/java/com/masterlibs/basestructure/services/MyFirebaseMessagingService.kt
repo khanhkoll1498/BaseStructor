@@ -14,7 +14,7 @@ import androidx.core.app.NotificationCompat
 import com.google.firebase.messaging.FirebaseMessagingService
 import com.google.firebase.messaging.RemoteMessage
 import com.masterlibs.basestructure.R
-import com.masterlibs.basestructure.view.activity.MainActivity
+import com.masterlibs.basestructure.view.activity.HomeActivity
 
 class MyFirebaseMessagingService : FirebaseMessagingService() {
     override fun onNewToken(token: String) {
@@ -33,7 +33,7 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
         }
         // Check if message contains a notification payload.
         if (remoteMessage.notification != null) {
-            val intentAct = Intent(this, MainActivity::class.java)
+            val intentAct = Intent(this, HomeActivity::class.java)
             intentAct.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
             Log.d(
                 ContentValues.TAG,

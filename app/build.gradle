@@ -75,6 +75,15 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    viewBinding {
+        enabled true
+    }
+
+    dataBinding {
+        //noinspection DataBindingWithoutKapt
+        enabled true
+    }
 }
 
 dependencies {
@@ -135,5 +144,10 @@ dependencies {
     annotationProcessor "androidx.room:room-compiler:$room_version"
     implementation "androidx.multidex:multidex:2.0.1"
 
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
 
+    implementation "org.slf4j:slf4j-log4j12:1.7.30"
+    implementation "com.itextpdf:itextpdf:5.5.4"
+    implementation 'com.tom_roush:pdfbox-android:1.8.10.1'
+    implementation 'com.github.barteksc:android-pdf-viewer:3.2.0-beta.1'
 }
