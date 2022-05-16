@@ -1,8 +1,9 @@
 package com.masterlibs.basestructure.model;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class Bucket {
+public class Bucket implements Serializable {
     private String bucketPath;
     private String firstImageContainedPath;
     private List<String> paths;

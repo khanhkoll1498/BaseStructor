@@ -12,4 +12,5 @@ object Const {
     const val K_CLICK_ITEM = "click_item"
     const val PATH_PDF = "path_pdf"
     const val SIZE = "SIZE"
+    const val ALBUMS = "ALBUMS"
 }

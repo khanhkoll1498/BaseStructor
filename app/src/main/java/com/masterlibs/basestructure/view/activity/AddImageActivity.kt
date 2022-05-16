@@ -72,6 +72,8 @@ class AddImageActivity(override val layoutId: Int = R.layout.act_add_image) : Ba
     override fun initView() {
         initData()
 
+        getData()
+
         ct_import.setOnClickListener { null }
 
         isClick = false
@@ -103,6 +105,10 @@ class AddImageActivity(override val layoutId: Int = R.layout.act_add_image) : Ba
         }
     }
 
+    private fun getData() {
+        buckets = intent.getSerializableExtra(Const.ALBUMS) as MutableList<Bucket?>
+    }
+
     private fun gotoDialogFragment() {
 //        val galleryAdapter = AlbumsAdapter(App.buckets, context)
 //        galleryAdapter.mCallback = this
@@ -118,7 +124,7 @@ class AddImageActivity(override val layoutId: Int = R.layout.act_add_image) : Ba
 
         if (ct_dialog.visibility == View.GONE) {
             ct_dialog.visibility = View.VISIBLE
-            val galleryAdapter = AlbumsAdapter(App.buckets, this)
+            val galleryAdapter = AlbumsAdapter(buckets, this)
             galleryAdapter.mCallback = this
             rc_dialog_album.adapter = galleryAdapter
 
@@ -271,10 +277,14 @@ class AddImageActivity(override val layoutId: Int = R.layout.act_add_image) : Ba
 
     companion object {
         @JvmStatic
-        fun start(context: Context) {
+        fun start(context: Context, list: MutableList<Bucket>) {
             val starter = Intent(context, AddImageActivity::class.java)
+
+            starter.putExtra(Const.ALBUMS, list as ArrayList)
             context.startActivity(starter)
         }
+
+        var buckets: MutableList<Bucket?> = ArrayList()
     }
 
 }
